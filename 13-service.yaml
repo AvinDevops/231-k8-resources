@@ -4,4 +4,11 @@ metadata:
   name: nginx-cip
 spec:
   selector:
+    project: expense
+    module: frontend
+    component: frontend
     environment: dev
+  ports:
+  - protocol: TCP
+    port: 80 #service port
+    targetPort: 80
