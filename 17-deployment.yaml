@@ -6,7 +6,7 @@ metadata:
     app: nginx
     tier: web
 spec:
-  replicas: 3
+  replicas: 20
   selector:
     matchLabels:
       project: expense
@@ -21,4 +21,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:stable-perl
+        image: nginx
