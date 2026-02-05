@@ -30,15 +30,15 @@ spec:
     persistentVolumeClaim:
       claimName: ebs-dyna-claim
 ---
-apiVersion: v1
-kind: Service
-metadata:
-  name: lb-ebs-dyna
-spec:
-  type: LoadBalancer
-  selector:
-    purpose: ebs-dynamic
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: lb-ebs-dyna
+# spec:
+#   type: LoadBalancer
+#   selector:
+#     purpose: ebs-dynamic
+#   ports:
+#   - protocol: TCP
+#     port: 80
+#     targetPort: 80
