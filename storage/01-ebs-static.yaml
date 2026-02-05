@@ -44,16 +44,16 @@ spec:
     persistentVolumeClaim:
       claimName: ebs-static-claim
 ---
-apiVersion: v1
-kind: Service
-metadata:
-  name: lb-service
-spec:
-  type: LoadBalancer
-  selector:
-    project: nginx-ebs
-    purpose: ebs-static
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: lb-service
+# spec:
+#   type: LoadBalancer
+#   selector:
+#     project: nginx-ebs
+#     purpose: ebs-static
+#   ports:
+#   - protocol: TCP
+#     port: 80
+#     targetPort: 80
