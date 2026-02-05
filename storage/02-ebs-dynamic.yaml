@@ -35,6 +35,7 @@ kind: Service
 metadata:
   name: lb-ebs-dyna
 spec:
+  type: LoadBalancer
   selector:
     purpose: ebs-dynamic
   ports:
