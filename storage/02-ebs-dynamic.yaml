@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: ebs-dyna-sc
+  storageClassName: "ebs-dyna-sc"
   resources:
     requests:
       storage: 4Gi
